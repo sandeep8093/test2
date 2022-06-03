@@ -23,6 +23,7 @@ mongoose
     console.log(err);
   });
 
-app.use('/book', require('./routes/books'));
+app.use('/address', require('./routes/address'));
 app.use('/auth', require('./routes/auth'));
+app.use('/search', require('./routes/search'))
 app.listen(PORT, () => console.log(`Server is working on port: ${PORT}`));
